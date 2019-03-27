@@ -7,10 +7,11 @@ string_of_words = input('Text: ')
 # Splitting words from user's input
 words = string_of_words.split()
 for word in words:
-    occurrence = text.get(word, 0) + 1
-    text[word] = occurrence
-    words.sort()
-    print(word)
+    occurrence = text.get(word, 0)
+    text[word] = occurrence + 1
 
-word_length = (len(word)for word in words)
-print('{} : {}'.format(word, word_length))
+words = list(text.keys())
+words.sort()
+word_length = max((len(word)for word in words))
+for word in words:
+    print('{:{}} =  {}'.format(word, word_length, text[word]))
