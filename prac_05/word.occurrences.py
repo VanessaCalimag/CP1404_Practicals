@@ -2,7 +2,7 @@
 
 text = {}
 string_of_words = input('Text: ')
-# This is a collection of words of nice words this is a fun thing it is
+# this is a collection of words of nice words this is a fun thing it is
 
 # Splitting words from user's input
 words = string_of_words.split()
