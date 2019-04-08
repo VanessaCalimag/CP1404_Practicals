@@ -17,7 +17,7 @@ for i, guitar in enumerate(guitars):
     vintage_string = ''
     if guitar.is_vintage():
         vintage_string = '(vintage)'
-        print("Guitar {}: {:>5} ({}), worth ${:,.2f}{}".format(i + 1, guitar.name, guitar.year, guitar.cost,
+        print("Guitar {}: {:>10} ({}), worth ${:,.2f}{}".format(i + 1, guitar.name, guitar.year, guitar.cost,
                                                                                                 vintage_string))
 
 
