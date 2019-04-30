@@ -15,6 +15,10 @@ class DistanceConverter(App):
         result = value * 1.60934
         self.root.ids.output_label.text = str(result)
 
+    def handle_increment(self, value, change):
+        result = value * 1.60934 + change
+        self.root.ids.input_number.text = str(result)
+
     def handle_press(self):
         self.message = self.root.ids.input_number.text
 
