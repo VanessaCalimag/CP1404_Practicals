@@ -63,4 +63,3 @@ def demo_walk():
 
 # main()
 demo_walk()
-
